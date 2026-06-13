@@ -423,6 +423,8 @@ jobs:
           TARGET: ${{ matrix.target }}
           GOARCH: ${{ matrix.goarch }}
           ASSET_ARCH: ${{ matrix.asset_arch }}
+          GOARM64: v8.0
+          GOMIPS: softfloat
         run: |
           set -euo pipefail
 
